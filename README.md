@@ -1,4 +1,8 @@
 # PromptoShare
+1. [French (Français)](#i-french)
+2. [English (Anglais)](#ii-english)
+
+
 
 # I- French
 

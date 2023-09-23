@@ -182,3 +182,32 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+
+
+/* Styles for the Pagination component */
+.pagination {
+  justify-content: center;
+}
+
+.page-item {
+  display: inline-block;
+  margin: 2px;
+}
+
+.page-link {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  background-color: #0056b3;
+}
+
+.page-item.disabled .page-link {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

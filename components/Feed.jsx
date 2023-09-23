@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import PromptCard from "./PromptCard";  {/*Composant qui gère l'affichage unitaire des prompts */}
+import Pagination from "./Pagination";
 
 // Composant pour afficher une liste de PromptCard
 const PromptCardList = ({ data, handleTagClick }) => {
@@ -23,6 +24,10 @@ const Feed = () => {
   const [searchText, setSearchText] = useState(""); // Texte de recherche
   const [searchTimeout, setSearchTimeout] = useState(null); // Timeout de recherche
   const [searchedResults, setSearchedResults] = useState([]); // Résultats de recherche
+  const [currentPage, setCurrentPage] = useState(1); // Page actuelle
+  const [postsPerPage] = useState(8); // Nombre d'éléments par page
+
+  
 
   // Fonction pour récupérer tous les posts
   const fetchPosts = async () => {
@@ -66,6 +71,16 @@ const Feed = () => {
     setSearchedResults(searchResult);
   };
 
+  // Fonction pour gérer le changement de page
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = allPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+
   return (
     <section className='feed'>
       <form className='relative w-full flex-center'>
@@ -85,8 +100,16 @@ const Feed = () => {
           handleTagClick={handleTagClick}
         />
       ) : (
-        <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
+        <PromptCardList data={currentPosts} handleTagClick={handleTagClick} />
       )}
+
+       {/* Pagination */}
+       <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={allPosts.length}
+        currentPage={parseInt(currentPage)}
+        paginate={paginate}
+      />
     </section>
   );
 };

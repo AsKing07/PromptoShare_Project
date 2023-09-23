@@ -1,3 +1,4 @@
+"use client";
 // Importations des bibliothèques et des composants nécessaires
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";

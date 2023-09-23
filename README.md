@@ -8,7 +8,7 @@
 
 PromptoShare est un outil d'IA open-source dédié aux prompts, conçu pour le monde moderne. Il offre aux utilisateurs la possibilité de découvrir, de créer et de partager des prompts créatifs pour stimuler leur écriture, leurs sessions de brainstorming et leurs projets créatifs. Il utilise tailwindcss pour le style. Ce fichier README vous guidera à travers les fonctionnalités, la configuration et le processus de déploiement de l'application Promptopia.
 
-## Fonctionnalité
+## Fonctionnalités
 
 - **Authentification avec Google:**  Les utilisateurs peuvent se connecter à Promptopia en utilisant leur compte Google, garantissant un processus de connexion sécurisé et sans tracas.
 - **Créer, Modifier et Supprimer des Publications:**  Une fois connectés, les utilisateurs peuvent créer de nouveaux prompts, modifier ceux existants ou supprimer des prompts qu'ils ne souhaitent plus conserver. Cela leur donne un contrôle total sur leur collection de prompts.

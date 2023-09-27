@@ -2,6 +2,11 @@
 1. [French (Français)](#i-french)
 2. [English (Anglais)](#ii-english)
 
+## Images
+
+<img src="img1.png" alt="Image 1" width="300">
+<img src="img2.png" alt="Image 2" width="300">
+<img src="img3.png" alt="Image 3" width="300">
 
 
 # I- French

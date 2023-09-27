@@ -4,9 +4,9 @@
 
 ## Images
 
-<img src="img1.png" alt="Image 1" width="300">
-<img src="img2.png" alt="Image 2" width="300">
-<img src="img3.png" alt="Image 3" width="300">
+<img src="Img1.png" alt="Image 1" width="300">
+<img src="Img2.png" alt="Image 2" width="300">
+<img src="Img3.png" alt="Image 3" width="300">
 
 
 # I- French
